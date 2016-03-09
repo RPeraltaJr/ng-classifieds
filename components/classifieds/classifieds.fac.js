@@ -10,7 +10,7 @@
             //   return $http.get('data/classifieds.json'); DATA EXISTS LOCALLY
             // }
         
-            var ref = new Firebase('https://ngclassifieds-rafael.firebaseio.com');
+            var ref = new Firebase('https://<FIREBASE-URL>.firebaseio.com');
         
             return {
                 // getClassifieds: getClassifieds
