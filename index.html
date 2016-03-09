@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>ngClassifieds</title>
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css" media="all" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- Define App Module and Controller -->
+<body ng-app="ngClassifieds">
+    
+    <!-- 
+       Angular Material Directives
+       Note: Angular Material makes use of Flexbox. 
+       For more information visit https://material.angularjs.org/latest/
+    -->
+    <ui-view></ui-view>
+    
+    <!-- Scripts -->
+    <!-- Not minified in order to display errors on the console -->
+    <script src="node_modules/angular/angular.js"></script>
+    <!-- Angular Material for layout -->
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <!-- Add animations -->
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <!-- UI Router -->
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- Defines App Module -->
+    <script src="scripts/app.js"></script>
+    <script src="components/classifieds/classifieds.ctr.js"></script>
+    <script src="components/classifieds/classifieds.fac.js"></script>
+    <!-- New (Controller) -->
+    <script src="components/classifieds/new/classifieds.new.ctr.js"></script>
+    <!-- Edit (Controller) -->
+    <script src="components/classifieds/edit/classifieds.edit.ctr.js"></script>
+    <!-- Lodash.js used to obtain unique array items (e.g. Categories) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+    
+    <!-- Classified Card Directive -->
+    <script src="components/classifieds/card/classified-card-dir.js"></script>
+      
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+    
+</body>
+</html>
